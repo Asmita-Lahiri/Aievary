@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*{ box-sizing:border-box; }
+
+
+
+.banner{position: relative;}
+.banner_pic img{max-width: 100%; width: 100%;}
+.overlay{background: rgba(10, 24, 40, 0.8); position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+
+.header{ position: absolute; top: 0; left: 0; width: 100%; z-index: 1; /*display: flex; justify-content: space-between; padding: 10px 0; width: 100%;*/}
+.headerTop{ background: rgba(4,23,46, 0.70); }
+.header_inner{display: flex; justify-content: space-between; padding: 15px 0; width: 100%; align-items: center;}
+.contact_section li{list-style: none; display: inline-block; vertical-align: top; padding-right: 15px;}
+.contact_section li a{color: #ddd; font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 16px; line-height: normal; text-decoration: none;}
+.contact_section li a img{padding-right: 8px;}
+.contact_section li:last child{padding-right: 0px;}
+
+.LogoNavHolder{ display: flex; justify-content: space-between; padding: 15px 0; width: 100%; align-items: center; }
+
+.social_media ul{}
+.social_media ul li{list-style: none; display: inline-block; vertical-align: top; padding-right: 10px;}
+.social_media ul li a{text-decoration: none;}
+.social_media ul li:last child{padding-right: 0px;}
+
+.bottom{position: absolute; left: 0; top: 0; width: 100%;}
+.header_bottom{padding-top: 55px; display: flex; justify-content: space-between; align-items: center; width: 100%; align-items: center;}
+.navigation ul{}
+.navigation ul li{list-style: none; display: inline-block; vertical-align: top; padding-right: 26px; position: relative;}
+.navigation ul li a{color: #fff; font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 16px; line-height: normal; text-decoration: none;
+text-transform: uppercase; display: block;}
+ .navigation>ul>li>a{padding: 50px 0;}
+.navigation ul li a:hover{color: #e6922e;}
+.navigation ul li:hover ul{ display: block;}
+.navigation li ul{ position: absolute; top: 102px; left: 0; background: #fff; width: 200px; border-radius: 5px; display: none; padding: 20px 20px;
+z-index: 1;}
+.navigation li li{list-style: none; padding-bottom: 20px; display: flex;}
+.navigation>li>li:last child{padding-bottom: 0;}
+.navigation li li a{color: #444;}
+
+
+.login{align-items: center;}
+.login a{color: #fff; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 16px; line-height: normal; background: #e6922e; text-decoration: none; 
+    text-transform: uppercase; padding: 13px 24px; border-radius: 5px; display: inline-block;}
+.login a:hover{color: #e6922e; background: #fff;}
+
+.banner_headings{ position: absolute; top: 50%; left: 43%; transform: translate(-34%, -34%); text-align: center;}
+.banner_headings h2{color: #fff;font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 90px; line-height: 86px; padding-bottom: 71px;}
+.banner_headings ul li{list-style: none; display: inline-block; vertical-align: top; padding-right: 42px;}
+.banner_headings ul li:last child{padding-right: 0px;}
+.get_started{display: flex; justify-content: center;}
+.started a{color: #fff; background: #e6922e; font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 20px; line-height: normal;
+text-decoration: none; text-transform: uppercase; padding: 20px 23px; margin-right: 40px;}
+.started a:hover{color: #e6922e; background: #fff;}
+.watch a{color: #fff; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 20px; line-height: normal;text-decoration: none; display: flex;}
+.watch a img{ padding-right: 15px;}
+.watch a:hover{color: #e6922e;}
+
+
+
+
+.statictics{padding-top: 92px; padding-bottom: 96px;}
+.stats_holder{display: flex; justify-content: space-between; align-items: center;}
+.box{width: 263px; background: #fff; padding: 30px 30px; text-align: center; border-bottom: 1px solid #e6922e; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);}
+.circle{background: #e6922e; width: 80px; height: 80px; border-radius: 50%; margin: 0 auto;}
+.circle img{padding: 15px 22px;}
+.box_heading h2{color: #444; font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 20px; line-height: normal; padding-top: 20px;}
+.box_heading h3{color: #000; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 24px; line-height: normal; padding-top: 20px;  padding-bottom: 27px;}
+
+
+
+.best_investment{background: #fafafa; padding-top: 104px; padding-bottom: 95px;}
+.investment_heading{text-align: center;}
+.investment_heading h2{color: #151b2c; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 40px; line-height: normal; padding-bottom: 26px;}
+.investment_heading p{color: #5d6471;font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; padding-bottom: 45px;}
+.investment_box{display: flex; justify-content: space-between;}
+.invest{width: 25%; height: 100%; background: #fff; border: 1px solid #E6922E; padding: 22px 40px; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+margin-right: 20px;}
+.invest h2 span{color: #E6922E; font-family: 'Nunito Sans', sans-serif; font-weight: 700; font-size: 40px; line-height: normal;}
+.invest h2{color: #444; font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: normal; padding-bottom: 20px;}
+.invest h3{color: #444; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 24px; line-height: normal; padding-bottom: 20px; text-transform: capitalize;}
+.invest h4{color: #5d6471; font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 15px; line-height: normal; padding-bottom: 20px; text-transform: capitalize;}
+.invest a{color: #fff; background: #E6922E; font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 14px; line-height: normal; text-transform: uppercase;
+padding: 14px 18px; border-radius: 2px; text-decoration: none; display: inline-block; margin-top: 7px;}
+.invest a:hover{color: #E6922E; background: #fff; border: 1px solid #E6922E;}
+
+
+
+.why_choose{padding-top: 100px; padding-bottom: 95px;}
+.why_heading{text-align: center;}
+.why_heading h2{color: #151b2c; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 40px; line-height: normal; padding-bottom: 26px;}
+.why_heading p{color: #5d6471; font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; padding-bottom: 45px;}
+.why_boxes{display: flex; justify-content: space-between; flex-wrap: wrap; justify-content: center;}
+.box_deatils{width: 100%; border: 1px solid #E6922E; padding: 44px 24px; display: flex; margin-bottom: 27px;
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); border-radius: 5px;}
+.why_icon{width: 68px; height: 68px; border-radius: 50%; border: 1px solid #E6922E; padding: 10px 10px; margin-top: 1px; margin-right: 23px; flex-shrink: 0;}
+.why_icon img{width: 100%; height: 100%;}
+.why_details{padding-top: 0px;}
+.why_details h2{color: #151b2c; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 24px; line-height: normal; padding-bottom: 25px;}
+.why_details p{color: #5d6471; font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;}
+.box_deatils:hover{background: #E6922E;}
+.box_deatils:hover .why_icon{border: 1px solid #fff;}
+.box_deatils:hover .why_details h2{color: #fff;}
+.box_deatils:hover .why_details p{color: #fff;}
+.choose_box{width: 50%; padding: 0 20px;}
+
+
+.clearfix{clear: both;}
+.overlay1{background: rgba(6,34,65,0.40); position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;}
+.multi_national_firm{background: url(../images/ag1.jpg); background-repeat: no-repeat; background-position: top center; 
+    background-size: cover; width: 100%; padding-top: 95px; padding-bottom: 95px; position: relative; z-index: 2;}
+.white_box{background: #fff; border-radius: 5px; padding: 51px 48px; float: right; width: 50%;}
+.white_box p{color: #151b2c; font-family: 'Nunito Sans', sans-serif; font-weight: 600; font-size: 24px; line-height: 30px; padding-bottom: 23px;}
+.white_box h4{color: #666;font-family: 'Nunito Sans', sans-serif; font-weight: 400; font-size: 18px; line-height: normal; }
+
+.header_1{ background:#000 }
+
+
+@media only screen and (max-width: 1400px) {
+    .header_inner{padding: 15px 30px;}
+    .LogoNavHolder{ padding-right:20px; padding-left:20px;}
+    .statictics{padding-right: 25px; padding-left: 25px;}
+    .investment_box{padding: 0 20px;}
+    .why_boxes{padding: 0 20px; justify-content: center;}
+    .white_box{margin: 0 15px;}
+}
+
+@media only screen and (max-width: 1199px){
+        .stats_holder{flex-wrap: wrap;}
+        .box{width: 47%; margin: 10px 10px;}
+        .investment_box{flex-wrap: wrap;}
+        .invest{width: 47%; margin: 10px 10px;}
+        .white_box{margin: 0 30px;}
+}
+
+
+@media only screen and (max-width: 991px){
+    .navigation ul li{padding-right: 2px;}
+    .banner_headings h2{font-size: 54px; line-height: 54px; padding-top: 51px;}
+}
+
+@media only screen and (max-width: 767px){
+    .banner_headings{top: 40%;}
+    .header_inner{flex-wrap: wrap; justify-content: center; text-align: center; padding: 10px 30px;}
+    .get_started{flex-wrap: wrap; justify-content: center; text-align: center;}
+    .started a{padding: 8px 13px; margin-right: 0;}
+    .started {margin-top: 15px;}
+    .watch {margin-top: 22px;}
+    .contact_section{padding-bottom: 10px;}
+    .banner_pic img{width: 100%;}
+    .headerBottom, .headerTop{display: none;}
+    .banner_headings h2{font-size: 26px; line-height: 29px; padding-bottom: 0; padding-top: 0;}
+    .box{width: 100%;}
+    .investment_heading{padding: 0 10px;}
+    .invest{width: 100%;}
+    .why_heading{padding: 0 10px;}
+    .choose_box{width: 100%;}
+    .white_box{width: 100%; margin: 0 auto;}
+
+}
+
+
+/*1599  - 1300
+1299  - 1200
+1199  - 992
+991  - 768
+767 - 576
+575/414 - 380
+380 - 322*/
